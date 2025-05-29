@@ -129,15 +129,15 @@ const Home = () => {
           <div className="fixed inset-0 bg-[#181a1c79]  flex items-center justify-center z-50">
             <form
               onSubmit={handleSubmit}
-              className="bg-white p-7 rounded shadow space-y-5 lg:w-[40vw]"
+              className="bg-[#2d2d2d] p-7 rounded shadow space-y-5 lg:w-[40vw]"
             >
-              <h2 className="text-xl font-bold text-gray-800">Add Character</h2>
+              <h2 className="text-xl font-bold ">Add Character</h2>
               <input
                 name="name"
                 value={newCharacter.name}
                 onChange={handleChange}
                 placeholder="Name"
-                className="mt-1 w-full px-4 py-2 border text-gray-600 border-gray-300 rounded-md shadow-sm"
+                className="mt-1 w-full px-4 py-2 border rounded-md shadow-sm"
                 required
               />
               <input
@@ -145,14 +145,14 @@ const Home = () => {
                 value={newCharacter.image}
                 onChange={handleChange}
                 placeholder="Image URL"
-                className="mt-1 w-full px-4 py-2 border text-gray-600 border-gray-300 rounded-md shadow-sm"
+                className="mt-1 w-full px-4 py-2 border rounded-md shadow-sm"
                 required
               />
               <select
                 name="gender"
                 value={newCharacter.gender}
                 onChange={handleChange}
-                className="mt-1 w-full px-4 py-2 border text-gray-600 border-gray-300 rounded-md shadow-sm"
+                className="mt-1 w-full px-4 py-2 border rounded-md shadow-sm"
                 required
               >
                 <option value="">Select Gender</option>
@@ -163,7 +163,7 @@ const Home = () => {
                 <button
                   onClick={() => setShowForm(false)}
                   type="button"
-                  className="bg-gray-300 px-4 py-2 rounded"
+                  className="bg-gray-600 px-4 py-2 rounded"
                 >
                   Cancel
                 </button>
