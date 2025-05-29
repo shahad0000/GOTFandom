@@ -39,6 +39,8 @@ const Login = () => {
           text: "Username or password is incorrect",
           icon: "error",
           confirmButtonColor: "#7c0d23",
+          background: "#2d2d2d",
+          color: "#fff",
         });
       } else {
         localStorage.setItem("username", creds.username);

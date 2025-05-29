@@ -51,6 +51,8 @@ const Home = () => {
         text: "This character will be permanently deleted.",
         icon: "warning",
         showCancelButton: true,
+        background: "#2d2d2d",
+        color: "#fff",
         confirmButtonText: "Yes, delete it!",
         confirmButtonColor: "#7c0d23",
         cancelButtonText: "Cancel",
@@ -206,12 +208,12 @@ const Home = () => {
             character.name.toLowerCase().includes(searchChar.toLowerCase())
           ).length === 0 ? (
             <div className="col-span-full text-center py-8">
-              <p className="text-2xl font-semibold flex flex-col justify-center gap-4">
+              <div className="text-2xl font-semibold flex flex-col justify-center gap-4">
                 <div className="flex justify-center text-6xl">
                   <FaRegSadTear />
                 </div>
                 Oops! No characters found.
-              </p>
+              </div>
             </div>
           ) : (
             allCharacters
@@ -233,7 +235,7 @@ const Home = () => {
                     <h2 className="text-xl font-semibold ">
                       {character.name}
                     </h2>
-                    <p className="text-sm">{character.gender}</p>
+                    <p className="text-sm text-[#bbbbbb]">{character.gender}</p>
 
                     {isLoggedIn &&
                       localStorage.username === character.username && (
@@ -255,7 +257,7 @@ const Home = () => {
       </div>
 
       <footer className="bg-[#2d2d2d] text-white text-center p-4 mt-8 h-[20vh] flex justify-center items-center">
-        <p>&copy; 2025 CharsFandom. All rights reserved.</p>
+        <p>&copy; 2025 GoTFandom. All rights reserved.</p>
       </footer>
     </div>
   );
